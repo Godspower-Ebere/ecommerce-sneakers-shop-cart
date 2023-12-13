@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta http-equiv="refrsh" content="1">
+    <link rel=" stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel=" stylesheet" href="css/style.css">
+    <link rel=" icon" href="images/favicon-32x32.png">
+    <script src="css/bootstrap/js/bootstrap.bundle.min.js" ></script>
+    <title>Sneakers</title>
+</head>
+<body>
+    <div class="pop" id="pop">
+        <ul class="d-flex nav"> 
+            <button class="fw-bold btn-close mb-3 ms-3" id="close"></button>
+            <li class="nav-item"><a class="fw-bold text-dark nav-link" href="">Collections</a></li>
+            <li class="nav-item"><a class="fw-bold text-dark nav-link" href="">Men</a></li>
+            <li class="nav-item"><a class="fw-bold text-dark nav-link" href="">Women</a></li>
+            <li class="nav-item"><a class="fw-bold text-dark nav-link" href="">About</a></li>
+            <li class="nav-item"><a class="fw-bold text-dark nav-link" href="">Contact</a></li>
+        </ul>
+    </div>
+    <div class="popup" id="popup">
+        <div class="d-flex cent flex-column align-items-center justify-content-center" id="cent">
+           <img src="images/icon-close.svg" id="popupc" class="close align-self-end mb-3" width="25px" height="25px">
+           
+            <div class="cont">
+                <img id="img2" style="width:400px" class=" mb-4" src="images/image-product-1.jpg" alt="">
+                <img id="p" class="n" src="images/icon-previous.svg" alt="">
+                <img id="n" class="p" src="images/icon-next.svg" alt="">
+                
+            </div>
+          
+            <div class="d-none d-sm-flex">
+                <img id="one2"  style="width:70px" class="me-4 rounded-2" src="images/image-product-1-thumbnail.jpg" alt="">
+                <img id="two2"  style="width:70px" class="me-4 rounded-2" src="images/image-product-2-thumbnail.jpg" alt="">
+                <img id="three2" style="width:70px" class="me-4 rounded-2" src="images/image-product-3-thumbnail.jpg" alt="">
+                <img id="four2" style="width:70px" class="me-4 rounded-2" src="images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="header d-flex bg-white border-bottom border-3  bg-light navbar ">
+            <div class="d-flex first justify-content-between align-items-center">
+                <div class="menu d-md-none" id="menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <img src="images/logo.svg" class="me-3" width="150px" height="20px">
+                <ul class="d-flex nav"> 
+                    <li class="nav-item"><a class="text-secondary nav-link" href="">Collections</a></li>
+                    <li class="nav-item"><a class="text-secondary nav-link" href="">Men</a></li>
+                    <li class="nav-item"><a class="text-secondary nav-link" href="">Women</a></li>
+                    <li class="nav-item"><a class="text-secondary nav-link" href="">About</a></li>
+                    <li class="nav-item"><a class="text-secondary nav-link" href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="d-flex navbar d-flex flex-column">
+                <div class="image">
+                    <div class="icons">
+                        <img class="cart" id="shop" src="images/icon-cart.svg" class="me-4" alt="">
+                        <span id="badge" class="top"></span>
+                    </div>
+                    <img  class="ava" src="images/image-avatar.png" width="40px" class="rounded-circle" alt="">
+                </div>
+                <div class="cont shadow rounded-4" id="shopcont">
+                    <p class="fw-bold h4 ms-3 pt-3">Cart</p>
+                    <hr>
+                    <ul class="cart" id="cart">
+                        <p id="empty" style="display: none;">Your Cart Is Empty</p>
+                        <li id="hide">
+                            <div class="div">
+                                <img src="images/image-product-1-thumbnail.jpg" alt="">
+                                <div class="list">
+                                    <p>Fall Limited Edition Sneakers</p>
+                                    <p>$125.00 x <span id="number"></span> <b>$</b><b id="sum"></b></p>
+                                </div>
+                                <img class="bin" id="bin" src="images/icon-delete.svg" alt="">
+                            </div>
+                            <button style="background-color:hsl(26, 100%, 55%); border: none;" class="fw-bold p-2 rounded-md-4 rounded-2  text-white">Checkout</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row p-md-5 p-0 d-flex flex-column flex-md-row justify-content-between gx-0 gx-sm-5">
+            <div class="col-12 col-md-6">
+                <div class="imageslide">
+                    <img id="img" style="width: 100%; height: 80%;" class=" mb-0 mb-sm-4" src="images/image-product-1.jpg" alt="">
+                    <img id="next" class="n" src="images/icon-previous.svg" alt="">
+                    <img id="prev" class="p" src="images/icon-next.svg" alt="">
+                </div>
+                
+                <div class=" d-none d-md-flex  ">
+                    <img id="one" class="rounded-2 me-4" style="width:70px" src="images/image-product-1-thumbnail.jpg" alt="">
+                    <img id="two" class="rounded-2 me-4" style="width:70px" src="images/image-product-2-thumbnail.jpg" alt="">
+                    <img id="three" class="rounded-2 me-4" style="width:70px" src="images/image-product-3-thumbnail.jpg" alt="">
+                    <img id="four" class="rounded-2 me-4" style="width:70px" src="images/image-product-4-thumbnail.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 py-md-5 py-0">
+                <p class="fw-bold" style="color:hsl(26, 100%, 55%)" >SNEAKER COMPANY</p>
+                <h1 class="h1 fw-bold mb-4">Fall Limited Edition Sneakers</h1>
+                <p class="text-secondary">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                     durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                <div class="d-flex flex-column strike">
+                    <div class="one d-flex align-items-center">
+                        <h1 class="fw-bold h2 me-3"> $125.00</h1>
+                        <p style="color:hsl(26, 100%, 55%); background:hsl(26, 83%, 82%)" class=" rounded fw-bold p-1 test-secondary">50%</p>
+                    </div>
+                    <p class="text-secondary">$250.00</p>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="input-group">
+                        <button id="minus" style="color:hsl(26, 100%, 55%); font-size: 30px;" class="px-4 btn btn-light minus">-</button>
+                        <button id="val" diasabled class="btn btn-light i " style="font-size: 20px;" >0</button>
+                        <button id="plus" style="color:hsl(26, 100%, 55%); font-size: 30px;" class="px-4 btn btn-light plus">+</button>
+                    </div>
+                    <button class=" fw-bold p-2 rounded-md-4 rounded-2  text-white" id="cartbtn"><img  src="images/icon-cart.svg"> Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js" ></script>
+</body>
+</html>
